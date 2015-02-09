@@ -2,7 +2,7 @@
   #%L
   Adobe AEM6 demo for authoring extension point: Flickr Assetfinder
   %%
-  Copyright (C) 2014 Adobe
+  Copyright (C) 2015 Adobe
   %%
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -34,9 +34,6 @@
         String placeholder = Placeholder.getDefaultPlaceholder(slingRequest, component, null, ddClassName, null);
         %><%= placeholder %><%
     } else {
-        %><div class="<%= xssAPI.encodeForHTMLAttr(ddClassName) %>"><%
-            %><img src="<%= xssAPI.getValidHref(fileReference) %>"/>
-        </div><%
-
+        %><img src="<%= xssAPI.getValidHref(fileReference) %>" class="<%= xssAPI.encodeForHTMLAttr(ddClassName) %>"/><%
     }
 %>
