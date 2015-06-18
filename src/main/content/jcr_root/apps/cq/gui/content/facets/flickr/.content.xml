@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Page Editor (Flickr search)"
+    sling:resourceType="granite/ui/components/foundation/contsys"
+    filterType="Flickr"
+    maxGeneratedOrder="20"
+    predicatesConfig="cq/gui/content/facets/formbuilderconfig/authoringpredicatetypes">
+    <items jcr:primaryType="nt:unstructured">
+        <geocontext
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="cq/gui/components/authoring/assetfinder/searchpredicates/optionspredicate"
+            fieldLabel="GeoContext"
+            filterType="Flickr"
+            listOrder="2"
+            metaType="options"
+            name="geo_context"
+            optionPaths="[/apps/cq/gui/content/common/options/predicates/geocontext]"
+            singleSelect="{Boolean}true"
+            text="GeoContext"/>
+    </items>
+</jcr:root>

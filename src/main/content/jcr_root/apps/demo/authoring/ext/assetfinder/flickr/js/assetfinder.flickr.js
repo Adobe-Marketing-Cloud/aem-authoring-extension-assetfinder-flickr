@@ -33,27 +33,50 @@
             '<i class="select"></i>' +
             '<i class="move"></i>' +
             '<div class="card">' +
-                '<span class="image">' +
-                    '<img class="show-grid cq-dd-image" src="'+ src +'" alt="cover">' +
-                '</span>' +
+            '<span class="image">' +
+            '<img class="show-grid cq-dd-image" src="'+ src +'" alt="cover">' +
+            '</span>' +
             '</div>' +
-        '</article>';
+            '</article>';
+    }
+
+    /**
+     * function to parse search predicates query into flickr api request parameters
+     * @param  {String} query search predicates query
+     * @return {String} request parameters object
+     */
+    function parseQuery(query) {
+        var geoStart,
+            text = "",
+            geocontext = "";
+        if(query.length > 0) {
+            geoStart = query.indexOf('"');
+            text = geoStart !== -1 ? query.substring(0, geoStart) : "";
+            geocontext = geoStart !== -1 ? query.substring(geoStart, query.length).split(':')[1] : "";
+        }
+
+        return {
+            text: text,
+            geocontext: geocontext
+        };
     }
 
     /**
      * Load assets from the public flickr stream. Any search options are ignored.
-     * 
+     *
      * @param query {String} search query
      * @param lowerLimit {Number} lower bound for paging
      * @param upperLimit {Number} upper bound for paging
      * @returns {jQuery.Promise}
      */
     self.loadAssets = function (query, lowerLimit, upperLimit) {
-
         var def = $.Deferred();
 
+        var params = parseQuery(query);
+
         $.getJSON(flickerAPI, {
-            //tags: query,
+            text: params.text,
+            geo_context: parseInt(params.geocontext.replace('"',"")),
             tagmode: "any",
             format: "json"
         }).done(function (data) {
