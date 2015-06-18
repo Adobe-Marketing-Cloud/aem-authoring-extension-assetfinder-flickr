@@ -3,4 +3,5 @@
     <filter root="/apps/demo/authoring/ext/assetfinder/flickr"/>
     <filter root="/apps/cq/gui/content/facets/flickr"/>
     <filter root="/apps/cq/gui/content/common/options/predicates/geocontext"/>
+    <filter root="/apps/wcm/core/content/editor"/>
 </workspaceFilter>
