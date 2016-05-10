@@ -1,8 +1,8 @@
 /*
  * #%L
- * Adobe AEM6 demo for authoring extension point: Flickr Assetfinder
+ * Adobe AEM6.2 Demo for authoring extension point: Flickr Assetfinder
  * %%
- * Copyright (C) 2015 Adobe
+ * Copyright (C) 2016 Adobe
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,13 +19,39 @@
  */
 (function ($, ns, channel, window, undefined) {
 
-    var name = 'Flickr';
+    /**
+     *
+     * Dependencies
+     *
+     */
 
-    function FlickrImageDragAndDrop() {}
+    var extendClass = ns.util.extendClass;
+    var AssetDragAndDrop = ns.ui.assetFinder.AssetDragAndDrop;
+    var dropController = ns.ui.dropController;
 
-    ns.util.inherits(FlickrImageDragAndDrop, ns.ui.assetFinder.AssetDragAndDrop);
+    /**
+     *
+     * Constants
+     *
+     */
 
-    // register the controller at the dispatcher
-    ns.ui.dropController.register(name, new FlickrImageDragAndDrop());
+    var NAME = "Flickr";
+
+    /**
+     *
+     * Internals
+     *
+     */
+
+    var FlickrDragAndDrop = extendClass(AssetDragAndDrop, {});
+
+    /**
+     *
+     * Hooks
+     *
+     */
+
+    // Register to the d&d controller
+    dropController.register(NAME, new FlickrDragAndDrop());
 
 }(jQuery, Granite.author, jQuery(document), this));

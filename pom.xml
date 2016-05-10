@@ -7,9 +7,9 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>content-package</packaging>
 
-    <name>Adobe AEM6.1 demo for authoring extension point: Flickr Assetfinder</name>
+    <name>Adobe AEM6.2 demo for authoring extension point: Flickr Assetfinder</name>
 
-    <inceptionYear>2015</inceptionYear>
+    <inceptionYear>2016</inceptionYear>
     <licenses>
         <license>
           <name>The Apache Software License, Version 2.0</name>

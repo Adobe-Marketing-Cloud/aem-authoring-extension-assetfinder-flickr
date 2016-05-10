@@ -1,3 +1,0 @@
-#base=js
-assetfinder.flickr.js
-assetfinder.flickr.dnd.js

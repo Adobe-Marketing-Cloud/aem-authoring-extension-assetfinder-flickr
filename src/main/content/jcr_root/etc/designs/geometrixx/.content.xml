@@ -15,7 +15,7 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="foundation/components/parsys"
-                components="[/libs/foundation/components/carousel,/libs/foundation/components/chart,/libs/foundation/components/download,/libs/foundation/components/flash,/libs/foundation/components/image,/apps/demo/authoring/ext/assetfinder/flickr/imageref,/apps/geometrixx/components/list,/libs/foundation/components/reference,/libs/foundation/components/search,/libs/foundation/components/sitemap,/libs/foundation/components/slideshow,/libs/foundation/components/table,/libs/cq/tagging/components/tagcloud,/libs/foundation/components/text,/libs/foundation/components/textimage,/apps/geometrixx/components/title,/libs/foundation/components/video,group:Columns,group:Form]">
+                components="[/libs/foundation/components/carousel,/libs/foundation/components/chart,/libs/foundation/components/download,/libs/foundation/components/flash,/libs/foundation/components/image,/apps/adobe/samples/assetfinderflickr/components/imageref,/apps/geometrixx/components/list,/libs/foundation/components/reference,/libs/foundation/components/search,/libs/foundation/components/sitemap,/libs/foundation/components/slideshow,/libs/foundation/components/table,/libs/cq/tagging/components/tagcloud,/libs/foundation/components/text,/libs/foundation/components/textimage,/apps/geometrixx/components/title,/libs/foundation/components/video,group:Columns,group:Form]">
                 <colctrl
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="foundation/components/parsys/colctrl"
@@ -116,7 +116,7 @@
                             assetGroup="reference"
                             assetMimetype="image/*"
                             droptarget="image"
-                            resourceType="demo/authoring/ext/assetfinder/flickr/imageref"
+                            resourceType="adobe/samples/assetfinderflickr/components/imageref"
                             type="Flickr"/>
                     </assetToComponentMapping>
                 </cq:authoring>
