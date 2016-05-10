@@ -123,7 +123,7 @@
      *
      */
 
-    // Register asset controller
+    // Register new group in the Asset Finder
     assetFinder.register(NAME, flickrAssetController);
 
 }(jQuery, Granite.author, jQuery(document), this));

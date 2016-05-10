@@ -51,7 +51,25 @@
      *
      */
 
-    // Register to the d&d controller
+    // Register to the d&d controller (the FlickrDragAndDrop behavior will be called for Assets cards annotated with data-type="Flickr")
     dropController.register(NAME, new FlickrDragAndDrop());
+
+    /**
+     * NB: To be able to directly drop the Flickr assets into your Page, make sure the Design configuration of your Parsys component allows it:
+     *
+     * <cq:authoring jcr:primaryType="nt:unstructured">
+     *     <assetToComponentMapping jcr:primaryType="nt:unstructured">
+     *         <image/>
+     *         <document/>
+     *         <video/>
+     *         <flickr
+     *              jcr:primaryType="nt:unstructured"
+     *              assetGroup="reference"
+     *              assetMimetype="image/*"
+     *              droptarget="image"
+     *              resourceType="adobe/samples/assetfinderflickr/components/imageref"
+     *              type="Flickr"/>
+     *     </assetToComponentMapping>
+     */
 
 }(jQuery, Granite.author, jQuery(document), this));
