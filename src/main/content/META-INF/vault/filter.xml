@@ -4,5 +4,5 @@
     <filter root="/apps/cq/gui/content/facets/flickr"/>
     <filter root="/apps/cq/gui/content/common/options/predicates/geocontext"/>
     <filter root="/apps/wcm/core/content/editor/jcr:content/sidepanels/edit"/>
-    <filter root="/etc/designs/geometrixx"/>
+    <filter root="/conf/we-retail/settings/wcm/policies/wcm/foundation/components/responsivegrid/we-retail-default"/>
 </workspaceFilter>
