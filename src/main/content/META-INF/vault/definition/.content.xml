@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:vlt="http://www.day.com/jcr/vault/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2017-03-22T10:05:05.861+01:00"
+    jcr:createdBy="admin"
+    jcr:description="Adobe AEM6.2 demo for authoring extension point: Flickr Assetfinder"
+    jcr:lastModified="{Date}2017-03-22T10:05:05.861+01:00"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="vlt:PackageDefinition"
+    buildCount="1"
+    builtWith="Adobe Experience Manager-6.3.0"
+    group="aem/demo"
+    lastUnwrapped="{Date}2017-03-22T10:05:05.861+01:00"
+    lastUnwrappedBy="admin"
+    lastWrapped="{Date}2017-03-22T10:05:05.861+01:00"
+    lastWrappedBy="admin"
+    name="com.adobe.aem.demo.authoring.ext.assetfinder.flickr"
+    version="1.0-SNAPSHOT">
+    <thumbnail.png/>
+    <filter jcr:primaryType="nt:unstructured">
+        <f0
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/apps/adobe/samples/assetfinderflickr"
+            rules="[]"/>
+        <f1
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/apps/cq/gui/content/facets/flickr"
+            rules="[]"/>
+        <f2
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/apps/cq/gui/content/common/options/predicates/geocontext"
+            rules="[]"/>
+        <f3
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/apps/wcm/core/content/editor/jcr:content/sidepanels/edit"
+            rules="[]"/>
+        <f4
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/conf/we-retail/settings/wcm/policies/wcm/foundation/components/responsivegrid/we-retail-default"
+            rules="[]"/>
+    </filter>
+</jcr:root>

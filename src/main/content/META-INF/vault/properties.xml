@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>FileVault Package Properties</comment>
+<entry key="createdBy">admin</entry>
+<entry key="name">com.adobe.aem.demo.authoring.ext.assetfinder.flickr</entry>
+<entry key="lastModified">2017-03-22T10:05:05.861+01:00</entry>
+<entry key="lastModifiedBy">admin</entry>
+<entry key="created">2017-03-22T10:05:05.953+01:00</entry>
+<entry key="buildCount">1</entry>
+<entry key="version">1.0-SNAPSHOT</entry>
+<entry key="dependencies"/>
+<entry key="packageFormatVersion">2</entry>
+<entry key="description">Adobe AEM6.2 demo for authoring extension point: Flickr Assetfinder</entry>
+<entry key="lastWrapped">2017-03-22T10:05:05.861+01:00</entry>
+<entry key="group">aem/demo</entry>
+<entry key="lastWrappedBy">admin</entry>
+</properties>

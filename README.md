@@ -1,4 +1,4 @@
-# Adobe Experience Manager 6.2 Extension: Add a new group to the Asset Finder to load Flickr images in the Sites Page Editor
+# Adobe Experience Manager 6.3 Extension: Add a new group to the Asset Finder to load Flickr images in the Sites Page Editor
 
 This is a sample package showing how to add a new group to the asset finder. This example connects to [Flickr](http://www.flickr.com/)'s public stream and shows them in the Asset Finder.
 
